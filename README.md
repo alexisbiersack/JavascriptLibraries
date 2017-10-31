@@ -9,7 +9,7 @@ One must not confuse the word "library" with "framework." The difference is quit
 <br>
 
 ## jQuery
-<h1 align="center"><a href="https://jqueryui.com" target="_blank"><img width="350" height="80" alt="Nicole Shayne" src="https://upload.wikimedia.org/wikipedia/en/9/9e/JQuery_logo.svg"></a></h1>
+<h1 align="center"><a href="https://jqueryui.com" target="_blank"><img width="350" height="80" alt="jQuery" src="https://upload.wikimedia.org/wikipedia/en/9/9e/JQuery_logo.svg"></a></h1>
 <br>
 
 > jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event 
@@ -43,7 +43,7 @@ Rating: 4/5
 
 
 ## React
-<h1 align="center"><a href="https://facebook.github.io/react/" target="_blank"><img width="350" height="170" alt="Nicole Shayne" src="https://cdn-images-1.medium.com/max/640/1*XaGxIa_JuHc8YTR5Znv6tg.png"></a></h1>
+<h1 align="center"><a href="https://facebook.github.io/react/" target="_blank"><img width="350" height="170" alt="React" src="https://cdn-images-1.medium.com/max/640/1*XaGxIa_JuHc8YTR5Znv6tg.png"></a></h1>
 <br>
 
 > React allows developers to create large web-applications that use data that can change over time, without reloading the page. 
@@ -69,6 +69,46 @@ Following is a rudimentary example of how React can be used in html using JSX an
 ```
 
 Rating: 4/5
+
+## Angular
+<h1 align="center"><a href="https://angularjs.org" target="_blank"><img width="350" height="120" alt="Angular" src="http://blog.avarteq.com/wp-content/uploads/2016/02/Lodash.jpg"></a></h1>
+<br>
+
+> A TypeScript-based open-source front-end web application platform led by the Angular Team at Google and by a community of > individuals and corporations to address all of the parts of the developer's workflow while building complex web applications.
+> Angular is a complete rewrite from the same team that built AngularJS.
+
+Angular is a framework for building client applications in HTML and either JavaScript or a language like TypeScript that compiles to JavaScript. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop.
+
+It also helps with server-side communication, taming async callbacks with promises and deferred objects, and it makes client-side navigation and deep linking with hashbang urls or HTML5 pushState a piece of cake. Best of all? It makes development fun!
+```
+ angular.
+  module('phonecatApp').
+  component('phoneList', {
+    template:
+        '<ul>' +
+          '<li ng-repeat="phone in $ctrl.phones">' +
+            '<span>{{phone.name}}</span>' +
+            '<p>{{phone.snippet}}</p>' +
+          '</li>' +
+        '</ul>',
+    controller: function PhoneListController() {
+      this.phones = [
+        {
+          name: 'Nexus S',
+          snippet: 'Fast just got faster with Nexus S.'
+        }, {
+          name: 'Motorola XOOM™ with Wi-Fi',
+          snippet: 'The Next, Next Generation tablet.'
+        }, {
+          name: 'MOTOROLA XOOM™',
+          snippet: 'The Next, Next Generation tablet.'
+        }
+      ];
+    }
+  });
+```
+
+Rating: 3/5
 
 ## Lodash
 <h1 align="center"><a href="https://lodash.com/" target="_blank"><img width="350" height="120" alt="Nicole Shayne" src="http://blog.avarteq.com/wp-content/uploads/2016/02/Lodash.jpg"></a></h1>
@@ -96,4 +136,3 @@ Lodash’s modular methods are great for:
 ```
 
 Rating: 3/5
-
